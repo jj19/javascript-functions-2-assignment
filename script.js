@@ -5,6 +5,12 @@
 
 //Write filterByGenre(books, genre) below here:
 
+let filterByGenre = (books,genre) => {
+ let bookFilter = books.filter(function(book){
+  return book.genre === genre
+ })
+return bookFilter
+}
 
 const books = [
   {
@@ -63,5 +69,4 @@ const books = [
     genre: "romance",
   },
 ];
-
 
